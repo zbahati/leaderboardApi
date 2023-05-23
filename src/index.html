@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeaderBoard Api</title>
+</head>
+<body>
+
+    <header>
+        <h1>LeaderBoard</h1>
+    </header>
+    <main class="flex-row">
+        <section class="scores-part flex-column">
+            <div class="first-scores-part flex-row">
+                <h2>Recent scores</h2>
+                <button type="button"> Refresh</button>
+            </div>
+            <div class="second-scores-part">
+                <div class="scores">
+                    <ul>
+                        <li>
+                            <span> Name :</span>
+                            <span> 100</span>
+                        </li>
+                        <li>
+                            <span> Name :</span>
+                            <span> 47</span>
+                        </li>
+                        <li>
+                            <span> Name :</span>
+                            <span> 74</span>
+                        </li>
+                        <li>
+                            <span> Name :</span>
+                            <span> 10</span>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="add-score-part">
+            <div class="add-score-title">
+                <h2>Add your score</h2>
+            </div>
+            <div class="form-add-score">
+                <form action="" method="POST">
+                    <div class="inputs">
+                        <input type="text" name="name" placeholder=" Your name">
+                        <input type="number" step="any" name="score" placeholder=" Your score">
+                    </div>
+                    <div class="buttons">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+</html>

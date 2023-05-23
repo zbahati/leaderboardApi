@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  overflow-x: hidden;
+}
+
+.flex-column,
+.flex-row,
+.add-score-part,
+.scores ul,
+.buttons {
+  display: flex;
+}
+
+.flex-column,
+.scores ul,
+main .add-score-part {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+  gap: 20px;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 5px;
+  background: rebeccapurple;
+  color: white;
+}
+
+button:hover {
+  transform: scale(0.975);
+}
+
+button:active {
+  transform: scale(0.965);
+  background: rgb(92, 11, 174);
+}
+
+header {
+  width: 90%;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid rebeccapurple;
+}
+
+header h1 {
+  text-align: center;
+}
+
+main {
+  width: 90%;
+  border: 1px solid rebeccapurple;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+main .scores-part {
+  width: 50%;
+  margin: auto;
+}
+
+main .add-score-part {
+  width: 50%;
+  margin: auto;
+  gap: 20px;
+}
+
+.add-score-part input {
+  width: 60%;
+  margin: 0 0 10px 0;
+  outline: none;
+  padding: 10px;
+}
+
+.scores ul {
+  padding: 20px;
+  gap: 10px;
+  font-weight: 700;
+}
+
+.scores ul li {
+  padding: 6px;
+}
+
+ul li:nth-child(even) {
+  background: rgb(102, 51, 153, 0.5);
+}
+
+.buttons {
+  width: 60%;
+  justify-content: flex-end;
+}
