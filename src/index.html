@@ -15,29 +15,11 @@
         <section class="scores-part flex-column">
             <div class="first-scores-part flex-row">
                 <h2>Recent scores</h2>
-                <button type="button"> Refresh</button>
+                <button type="button" id="refresh"> Refresh</button>
             </div>
             <div class="second-scores-part">
                 <div class="scores">
-                    <ul>
-                        <li>
-                            <span> Name :</span>
-                            <span> 100</span>
-                        </li>
-                        <li>
-                            <span> Name :</span>
-                            <span> 47</span>
-                        </li>
-                        <li>
-                            <span> Name :</span>
-                            <span> 74</span>
-                        </li>
-                        <li>
-                            <span> Name :</span>
-                            <span> 10</span>
-                        </li>
 
-                    </ul>
                 </div>
 
             </div>
@@ -48,7 +30,7 @@
                 <h2>Add your score</h2>
             </div>
             <div class="form-add-score">
-                <form action="" method="POST">
+                <form id='form' method="POST">
                     <div class="inputs">
                         <input type="text" name="name" placeholder=" Your name">
                         <input type="number" step="any" name="score" placeholder=" Your score">

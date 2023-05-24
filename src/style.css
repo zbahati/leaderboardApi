@@ -96,7 +96,7 @@ main .add-score-part {
   padding: 6px;
 }
 
-ul li:nth-child(even) {
+main li:nth-child(even) {
   background: rgb(102, 51, 153, 0.5);
 }
 
