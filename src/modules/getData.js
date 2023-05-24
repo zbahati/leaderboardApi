@@ -1,4 +1,3 @@
-
 const addData = async () => {
   try {
     const scores = document.querySelector('.scores');
