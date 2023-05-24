@@ -1,26 +1,3 @@
-// export const addData = () => {
-//   const scores = document.querySelector(".scores");
-//   const ul = document.createElement("ul");
-
-//   const key =
-//     "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AOX5lFiBGXXRnzsT2I1a/scores";
-
-//   fetch(key, {
-//     method: "GET",
-//   })
-//     .then((response) => response.json())
-//     .then((data) => {
-//       return data.result.forEach((element) => {
-//         ul.innerHTML += `
-//       <li>
-//       <span> ${element.user} :</span>
-//       <span> ${element.score}</span>
-//       </li>
-//      `;
-//         scores.appendChild(ul);
-//       });
-//     });
-// };
 
 const addData = async () => {
   try {
