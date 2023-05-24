@@ -22,17 +22,15 @@
 //     });
 // };
 
-
-export const addData = async () => {
+const addData = async () => {
   try {
-    const scores = document.querySelector(".scores");
-    const ul = document.createElement("ul");
+    const scores = document.querySelector('.scores');
+    const ul = document.createElement('ul');
 
-    const key =
-      "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AOX5lFiBGXXRnzsT2I1a/scores";
+    const key = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AOX5lFiBGXXRnzsT2I1a/scores';
 
     const response = await fetch(key, {
-      method: "GET",
+      method: 'GET',
     });
 
     const data = await response.json();
@@ -48,6 +46,8 @@ export const addData = async () => {
 
     scores.appendChild(ul);
   } catch (error) {
-    console.error(error);
+    alert.error(error);
   }
 };
+
+export default addData;
