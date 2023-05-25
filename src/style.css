@@ -20,6 +20,11 @@ body {
   display: flex;
 }
 
+.first-scores-part {
+  display: flex;
+  justify-content: space-between;
+}
+
 .flex-column,
 .scores ul,
 main .add-score-part {
@@ -57,7 +62,7 @@ header {
 }
 
 header h1 {
-  text-align: center;
+  text-align: start;
 }
 
 main {
@@ -89,7 +94,7 @@ main .add-score-part {
 }
 
 .scores ul {
-  padding: 20px;
+  padding: 20px 0;
   gap: 10px;
   font-weight: 700;
 }
